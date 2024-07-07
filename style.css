@@ -1,0 +1,52 @@
+body {
+    font-family: Poppins, sans-serif;
+}
+
+header {
+    background-color: #fbfbfd86;
+    height: 60px;
+}
+
+.navbar-toggler {
+    background-color: #fbfbfd;
+    border: none;
+}
+
+.nav .nav-link.active {
+    background-color: #333333;
+}
+
+.nav .nav-link {
+    color: #333333;
+    font-size: .8em;
+}
+
+#momentos,
+#contato {
+    background-color: #f5f5f7;
+}
+
+#mensagem {
+    resize: none;
+    height: 100px;
+}
+
+.btn {
+    background-color: #333333;
+    color: #f5f5f7;
+}
+
+.color-redes {
+    color: #333333;
+}
+
+footer {
+    background-color: #333333;
+    color: #f5f5f7;
+}
+
+@media (max-width: 767px) {
+    header {
+        height: 80px;
+    }
+}

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Coffee</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="navbar">
+        <div class="container">
+            <h1 class="navbar-brand m-0">
+                <i class="bi bi-cup-hot-fill"></i>
+                Mr. Coffee
+            </h1>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-nav">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#sobre">Sobre o Mr. Coffee</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#momentos">Colecione momentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cardapio">Nosso cardápio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true">
+        <!-- Carrossel -->
+        <section id="slides">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="4000">
+                        <img class="w-100" src="images/slides/machine-coffee.jpg">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img class="w-100" src="images/slides/coffee-shop.jpg">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img class="w-100" src="images/slides/coffee.jpg">
+                    </div>
+                </div>
+
+                <!-- Botão de voltar -->
+                <button class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+
+                <!-- Botão de avançar -->
+                <button class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+
+                <!-- Indicador de slide -->
+                <div class="carousel-indicators">
+                    <button class="active" data-bs-target="#carousel" data-bs-slide-to="0" type="button"></button>
+                    <button data-bs-target="#carousel" data-bs-slide-to="1" type="button"></button>
+                    <button data-bs-target="#carousel" data-bs-slide-to="2" type="button"></button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sobre -->
+        <section class="pb-4 pt-4" id="sobre">
+                        <div class="pt-4 pb-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img class="d-block w-100" src="images/cafeteria.webp" alt="Imagem da cafeteria">
+                        </div>
+                        <div class="col-md-7 mt-4 mt-md-0">
+                            <h4>
+                                <i class="bi bi-cup-hot-fill"></i>
+                                Sobre o Mr. Coffee
+                            </h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut optio doloremque nisi numquam tempore quo dolore labore similique, sit repellendus velit consequatur nemo, quaerat eius voluptatibus ut reprehenderit consectetur facilis.</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente et, porro iste non fugit recusandae itaque similique ullam culpa laborum veritatis in quae libero dolorum mollitia perspiciatis veniam nesciunt quos.</p>
+                            <ul>
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Colecione Mometnos -->
+        <section class="pb-4 pt-4" id="momentos">
+            <div class="container">
+                <h4 class="text-center pb-4">
+                    <i class="bi bi-camera-reels-fill"></i>
+                    Colecione Momentos
+                </h4>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="d-block w-100 pb-4" src="images/momentos/coffee-and-work.jpg">
+                        <h6 class="fw-bold">
+                            <i class="bi bi-person-workspace"></i>
+                            Coffee and Work
+                        </h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sint fugit, explicabo dignissimos, a aspernatur quia sit illum adipisci earum architecto! Pariatur placeat ut facere maiores consequuntur temporibus doloribus minima.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="d-block w-100 pb-4" src="images/momentos/confra.jpg">
+                        <h6 class="fw-bold">
+                            <i class="bi bi-person-arms-up"></i>
+                            Celebration and coffee
+                        </h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sint fugit, explicabo dignissimos, a aspernatur quia sit illum adipisci earum architecto! Pariatur placeat ut facere maiores consequuntur temporibus doloribus minima.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="d-block w-100 pb-4" src="images/momentos/meeting.jpg">
+                        <h6 class="fw-bold">
+                            <i class="bi bi-chat-left-quote-fill"></i>
+                            Meeting and coffee
+                        </h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sint fugit, explicabo dignissimos, a aspernatur quia sit illum adipisci earum architecto! Pariatur placeat ut facere maiores consequuntur temporibus doloribus minima.</p>
+                    </div>
+            </div>
+        </section>
+
+        <!-- Nosso cardápio -->
+        <section class="pb-4 pt-4" id="cardapio">
+            <div class="container">
+                <div class="row">
+                    <h4 class="text-center pb-4">
+                        <i class="bi bi-list-columns"></i>
+                        Nosso cardápio
+                    </h4>
+                </div>
+                <!-- Menu vertical -->
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column mb-4 mt-md-0">
+                            <button class="nav-link text-start active" data-bs-toggle="tab" data-bs-target="#quentes" type="button">Quentes</button>
+                            <button class="nav-link text-start" data-bs-toggle="tab" data-bs-target="#gelados" type="button">Gelados</button>
+                            <button class="nav-link text-start" data-bs-toggle="tab" data-bs-target="#frapuccinos" type="button">Frapuccinos</button>
+                            <button class="nav-link text-start" data-bs-toggle="tab" data-bs-target="#especiais" type="button">Especiais</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <!-- Quentes -->
+                            <div class="tab-pane active" id="quentes">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="rounded-lg w-100" src="images/cardapio/expresso.jpg">
+                                        <h5 class="mt-2">Expresso simples</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="rounded-lg w-100" src="images/cardapio/expresso.jpg">
+                                        <h5 class="mt-2">Expresso simples</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="rounded-lg w-100" src="images/cardapio/expresso.jpg">
+                                        <h5 class="mt-2">Expresso simples</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="rounded-lg w-100" src="images/cardapio/expresso.jpg">
+                                        <h5 class="mt-2">Expresso simples</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="rounded-lg w-100" src="images/cardapio/expresso.jpg">
+                                        <h5 class="mt-2">Expresso simples</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="rounded-lg w-100" src="images/cardapio/expresso.jpg">
+                                        <h5 class="mt-2">Expresso simples</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Gelados -->
+                            <div class="tab-pane" id="gelados">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="rounded-lg w-100" src="images/cardapio/gelado.jpg">
+                                        <h5 class="mt-2">Gelado simples</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="rounded-lg w-100" src="images/cardapio/gelado.jpg">
+                                        <h5 class="mt-2">Gelado simples</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="rounded-lg w-100" src="images/cardapio/gelado.jpg">
+                                        <h5 class="mt-2">Gelado simples</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="rounded-lg w-100" src="images/cardapio/gelado.jpg">
+                                        <h5 class="mt-2">Gelado simples</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="rounded-lg w-100" src="images/cardapio/gelado.jpg">
+                                        <h5 class="mt-2">Gelado simples</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="rounded-lg w-100" src="images/cardapio/gelado.jpg">
+                                        <h5 class="mt-2">Gelado simples</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Frapuccinos -->
+                            <div class="tab-pane" id="frapuccinos">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="rounded-lg w-100" src="images/cardapio/frapuccino.jpg">
+                                        <h5 class="mt-2">Frapuccino d'casa</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="rounded-lg w-100" src="images/cardapio/frapuccino.jpg">
+                                        <h5 class="mt-2">Frapuccino d'casa</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="rounded-lg w-100" src="images/cardapio/frapuccino.jpg">
+                                        <h5 class="mt-2">Frapuccino d'casa</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="rounded-lg w-100" src="images/cardapio/frapuccino.jpg">
+                                        <h5 class="mt-2">Frapuccino d'casa</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="rounded-lg w-100" src="images/cardapio/frapuccino.jpg">
+                                        <h5 class="mt-2">Frapuccino d'casa</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="rounded-lg w-100" src="images/cardapio/frapuccino.jpg">
+                                        <h5 class="mt-2">Frapuccino d'casa</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Especiais -->
+                            <div class="tab-pane" id="especiais">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="rounded-lg w-100" src="images/cardapio/especial.jpg">
+                                        <h5 class="mt-2">Drink de Nutella</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="rounded-lg w-100" src="images/cardapio/especial.jpg">
+                                        <h5 class="mt-2">Drink de Nutella</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="rounded-lg w-100" src="images/cardapio/especial.jpg">
+                                        <h5 class="mt-2">Drink de Nutella</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="rounded-lg w-100" src="images/cardapio/especial.jpg">
+                                        <h5 class="mt-2">Drink de Nutella</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="rounded-lg w-100" src="images/cardapio/especial.jpg">
+                                        <h5 class="mt-2">Drink de Nutella</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="rounded-lg w-100" src="images/cardapio/especial.jpg">
+                                        <h5 class="mt-2">Drink de Nutella</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fale conosco -->
+        <section class="pt-4 pb-4" id="contato">
+            <div class="container">
+                <h4 class="text-center pb-4">
+                    <i class="bi bi-telephone-inbound-fill"></i>
+                    Fale conosco
+                </h4>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5 class="section-title fw-bold mt-4 mb-4">
+                            <i class="bi bi-envelope-fill"></i> 
+                            Nos envie uma mensagem
+                        </h5>
+                        <form id="formulario">
+                            <div class="mb-4">
+                                <label class="form-label" for="nome">Seu nome</label>
+                                <input class="form-control" type="text" id="nome" name="nome" placeholder="Informe seu nome completo">
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label" for="email">Seu e-mail</label>
+                                <input class="form-control" type="email" id="email" name="email" placeholder="seu-nome@exemplo.com">
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label" for="telefone">Seu telefone</label>
+                                <input class="form-control" type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999">
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label" for="mensagem">Sua mensagem</label>
+                                <textarea class="form-control" id="mensagem" name="mensagem" ></textarea>
+                            </div>
+                            <button class="btn" type="submit">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5">
+                        <div class="row mt-4 mt-md-0">
+                            <h5 class="section-title fw-bold mt-4 mb-4">
+                                <i class="bi bi-people-fill"></i>
+                                Nossas redes
+                            </h5>
+                            <ul>
+                                <li class="list-inline-item list-unstyled fs-3">
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="bi bi-facebook color-redes"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item list-unstyled fs-3">
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="bi bi-instagram color-redes"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item list-unstyled fs-3">
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="bi bi-whatsapp color-redes"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h5 class="section-title">
+                                <i class="bi bi-house-fill"></i>
+                                Faça-nos uma visita
+                            </h5>
+                            <p>Rua tal, 351, bloco 2 - bairro tal - São Paulo - SP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="p-2">
+            <p class="mb-3 mb-md-0 fs-6 text-center">&copy 2024 Mr. Coffee. Todos os direitos reservados.</p>
+            <p class="mb-3 mb-md-0 fs-6 text-center">Desenvolvido por Rangel Moura.</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
